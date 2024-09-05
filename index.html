@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Mohan Sai - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+        }
+        /* Vibrant Colors for Header */
+        
+        .header-bg {
+            background: linear-gradient(45deg, #ff6347, #ff4500, #ffb6c1);
+            color: white;
+            border-bottom: 5px solid #ff4500;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        /* Card and Section Backgrounds */
+        
+        .section-bg {
+            background-color: #f8f9fa;
+            animation: slideInUp 1s ease-out;
+        }
+        
+        .bg-custom {
+            background-color: #ffebcd;
+            animation: slideInLeft 1s ease-out;
+        }
+        
+        .bg-skill {
+            background-color: #fffacd;
+        }
+        /* Custom Card Styles */
+        
+        .skill {
+            border: 2px solid #ff4500;
+            background-color: #f7f7f7;
+            transition: transform 0.2s ease;
+            animation: zoomIn 1s ease-in-out;
+        }
+        
+        .skill:hover {
+            transform: translateY(-10px);
+        }
+        /* Styling for skill icons */
+        
+        .img_hight,
+        .img_hight_3 {
+            width: 60px;
+        }
+        /* Project Cards */
+        
+        .project {
+            border: 2px solid #ff4500;
+            background-color: #fffacd;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+            animation: bounceIn 1s ease-out;
+        }
+        
+        .project:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Vibrant Contact Section */
+        
+        .contact-bg {
+            background-color: #ffe4e1;
+            color: #ff4500;
+            padding: 20px;
+            border-top: 5px solid #ff6347;
+            animation: fadeInUp 1s ease-out;
+        }
+        /* Button styles */
+        
+        a.text-primary {
+            color: #ff4500 !important;
+            text-decoration: none;
+        }
+        
+        a.text-primary:hover {
+            color: #ff6347 !important;
+        }
+        /* Font Styling */
+        
+        h2,
+        h3 {
+            font-weight: 700;
+            color: #ff4500;
+        }
+        
+        .lead {
+            font-size: 1.25rem;
+        }
+        /* Animations */
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-bg text-center py-5">
+        <div class="container">
+            <h1>Ram Mohan Sai</h1>
+            <p class="lead">B.Tech Student | Web Developer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section py-5 bg-custom">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I am A. Ram Mohan Sai, a final-year B.Tech student. My hobbies include watching movies and playing video games. My technical skills include HTML, CSS, Bootstrap, JavaScript, and SQL.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skill bg-white p-4 rounded shadow-sm mb-4 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" class="img_hight m-3">
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill bg-white p-4 rounded shadow-sm mb-4 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAbQJ1smNrIvvMazOCFGA3d2T7aqawCi19Q&s" class="img_hight m-3">
+                        <h4>SQL</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill bg-white p-4 rounded shadow-sm mb-4 text-center">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_640.png" class="img_hight m-3">
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill bg-white p-4 rounded shadow-sm mb-4 text-center">
+                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" class="img_hight m-3">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <div class="skill bg-white p-4 rounded shadow-sm mb-4 text-center">
+                        <img src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png" class="img_hight m-3">
+                        <h4>BootStrap</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-5 section-bg">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="project bg-white p-4 rounded shadow-sm mb-4">
+                        <h3>Wikipedia Search Application</h3>
+                        <p>The application is accessible via a web browser. </p>
+                        <p>• Users can search for topics on Wikipedia.</p>
+                        <p>• The application allows users to view comprehensive information about their search query.</p>
+                        <p>• The application offers a user-friendly interface for easy navigation and use. </p>
+                        <p>• Users can enter a search query to find relevant Wikipedia articles.</p>
+                        <p>• The application displays a list of relevant search results based on the user’s query.</p>
+                        <p> • Users can click on a specific result to view more detailed information directly from Wikipedia</p>
+                        <p>Project link:
+                            <a href="https://wipapplication.ccbp.tech/" class="text-primary">click</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project bg-white p-4 rounded shadow-sm mb-4">
+                        <h3>AWS Static Website Hosting in S3</h3>
+                        <p>• Affordable: S3 provides a low-cost solution for hosting static content, with pricing based on storage and data transfer, making it cost-effective for small to large websites. </p>
+                        <p>• Reliable Access: S3 ensures high availability an data durability by replicating data across multiple servers and locations, ensuring that the website is always accessible and protected against data loss. </p>
+                        <p> • Automatic Scaling: S3 automatically scales to handle varying traffi levels without manual intervention, and its user-friendly interface makes it easy to deploy and manage static websites. </p>
+                        <p> Project link:
+                            <a href="http://frist-bucket-aws.s3-website.ap-south-1.amazonaws.com/" class="text-primary">click</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3">
+                    <div class="project bg-white p-4 rounded shadow-sm mb-4">
+                        <h3>Guess Number Game</h3>
+                        <p>Simple Goal: The player tries to guess a randomly generated number with in a specified range (e.g., 1 to 100).</p>
+                        </p>
+                        <p>Feedback Mechanism: The game provides feedback whether the guess is too high, too low, or correct.</p>
+                        <p> Project link:
+                            <a href="https://gunumber.ccbp.tech/" class="text-primary">click</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-5 contact-bg text-center">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:rammohansai12@gmail.com" class="text-primary">rammohansai12@gmail.com</a></p>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
